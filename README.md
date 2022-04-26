@@ -8,3 +8,11 @@
 3. 有一群人主張：攻擊會成功，主要的問題來自data而非模型，因為不同模型訓練出來的結果是相近的！當有足夠的資料，有可能就能避免攻擊！
 4. 主動防禦：一開始就訓練一個比較不會被攻破的模型->Adversarial Training（不斷地找漏洞，再去補漏洞），就算沒人要攻擊，也能用此方法來減少overfitting的狀況發生
    被動防禦：：模型已訓練好，模型不動，在模型前面加一個filter(如smoothing)，去削減attack signal的威力！
+## Explainable AI: Why Does the Model Make This Prediction (機器為何可以得到正確答案？)
+1. 需要機器學習的模型是具有解釋力的！如醫療診斷理由、銀行是否貸款給某個人、法官判案、自駕車急煞的理由等
+2. 真正用的技術不是單棵decision tree，而是decision forest！ -> 所以並不是有decision tree就能解決explainable ML problem
+3. Explainable ML的目標是什麼？
+   (1)能夠了解模型的一切？但我們也不理解腦袋運作的一切，但我們仍相信腦袋所做的決定！所以我們需要了解模型的一切嗎？
+   
+   (2)人能接受的理由，就是好的理由，所以我們才需要ML Model需要可以被解釋
+## Explainable AI: Why Does a Cat Look Like (for a Model)
